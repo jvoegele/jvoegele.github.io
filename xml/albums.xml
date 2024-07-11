@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE AlbumGuide SYSTEM "http://www.jvoegele.com/xml/albums.dtd">
+
+<AlbumGuide>
+
+<reviewer id="jvoegele">
+	<name>Jason Voegele</name>
+	<email>jason@jvoegele.com</email>
+	<link>http://www.jvoegele.com</link>
+</reviewer>
+<reviewer id="bfdecem">
+	<name>Doug Mitchell</name>
+	<email>Bfdecem@aol.com</email>
+	<link>http://hometown.aol.com/bfdecem/myhomepage</link>
+</reviewer>
+<reviewer id="RS">
+	<name>Rolling Stone</name>
+	<link>http://www.rollingstone.com</link>
+</reviewer>
+<reviewer id="SPIN">
+	<name>Spin</name>
+	<link>http://www.spin.com</link>
+</reviewer>
+
+<artist>
+	<name>R.E.M.</name>
+	<album>
+		<title>Murmur</title>
+		<image> <full>http://images.amazon.com/images/P/B000001I0A.01.LZZZZZZZ.gif</full> </image>
+		<date>
+			<year>1983</year>
+		</date>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>10</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>10</grade>
+		</rating>
+	</album>
+	<album>
+		<title>Automatic for the People</title>
+		<image> <full>http://images.amazon.com/images/P/B000002MG1.01.LZZZZZZZ.gif</full> </image>
+		<date>
+			<year>1992</year><month>10</month><day>6</day>
+		</date>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>10</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>8</grade>
+		</rating>
+	</album>
+</artist>
+
+<artist>
+	<name>Pearl Jam</name>
+	<overview><![CDATA[
+<p>
+If I were more creative I would have a good overview of the band as a
+whole that would go here.  As it is, I'm just typing some meaningless
+nonsense to show what it would look like if I actually did have an
+overview for this band.  Basically, what I'm saying is that I'm just
+writing this for testing purposes, and if you're still reading this
+you're wasting your time.
+</p>
+<p>
+What do you think?  Is this profound or what?
+</p>
+	]]></overview>
+	<album>
+		<title>Ten</title>
+		<image>
+			<full>/music/images/ten.gif</full>
+		</image>
+		<date>
+			<year>1991</year><month>8</month><day>27</day>
+		</date>
+		<label>Epic</label>
+		<rating revid="jvoegele">
+			<grade>8</grade>
+			<review>
+				<title>A Good Start for a Great Band</title>
+				<content><![CDATA[
+<p>
+This is Pearl Jam's first release, and it shows to some degree.  Still, back in
+the early '90's, when we just starting to realize how <em>bad</em> music had 
+been for the past decade and a half, it came as a welcome relief: music that
+was full of heart and soul, that tried to make a difference, and though not as
+important in this regard as Nirvana's <cite>Nevermind</cite>, started something
+fresh and new.
+</p>
+<p>
+Pearl Jam has certainly went on to produce work that was more sophistocated and
+in many regards	<em>better</em> than this, their first album.  But they've
+never quite struck a chord as much as they did when <i>Evenflow</i>,
+<i>Alive</i>, <i>Jeremy</i>, and <i>Black</i> were ruling the charts.
+</p>
+				]]></content>
+			</review>
+		</rating>
+		<rating revid="RS">
+			<grade>8</grade>
+			<review>
+				<title>Rolling Stone Review</title>
+				<content>
+				Rolling Stone had a lot to say about this album.
+				But I'm not going to repeat it here...
+				</content>
+			</review>
+		</rating>
+		<rating revid="SPIN">
+			<grade>7</grade>
+		</rating>
+	</album>
+	<album>
+		<title>Vs.</title>
+		<image>
+			<full>/music/images/vs.gif</full>
+		</image>
+		<date>
+			<year>1993</year><month>10</month><day>19</day>
+		</date>
+		<label>Epic</label>
+		<rating revid="jvoegele">
+			<grade>9</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>9</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>6</grade>
+		</rating>
+	</album>
+
+	<album>
+		<title>Vitalogy</title>
+		<image>
+			<full>http://images.amazon.com/images/P/B000002AZ8.01.LZZZZZZZ.gif</full>
+		</image>
+		<date>
+			<year>1994</year><month>12</month><day>6</day>
+		</date>
+		<label>Epic</label>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>8</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>7</grade>
+		</rating>
+	</album>
+
+	<album>
+		<title>No Code</title>
+		<image> <full>http://images.amazon.com/images/P/B000002BFZ.01.LZZZZZZZ.gif</full> </image>
+		<date>
+			<year>1996</year><month>8</month><day>27</day>
+		</date>
+		<label>Epic</label>
+		<rating revid="jvoegele">
+			<grade>8</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>8</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>6</grade>
+		</rating>
+	</album>
+
+	<album>
+		<title>Yield</title>
+		<image> <full>http://images.amazon.com/images/P/B000002BYD.01.LZZZZZZZ.gif</full> </image>
+		<date>
+			<year>1998</year><month>2</month><day>3</day>
+		</date>
+		<label>Epic</label>
+		<rating revid="jvoegele">
+			<grade>9</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>8</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>8</grade>
+		</rating>
+	</album>
+</artist>
+
+<artist>
+	<name>Smashing Pumpkins</name>
+	<album>
+		<title>Siamese Dream</title>
+		<image> <full>/music/images/siamese.gif</full> </image>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>7</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>10</grade>
+		</rating>
+	</album>
+	<album>
+		<title>Gish</title>
+		<image><full>http://images.amazon.com/images/P/B000000W6F.01.LZZZZZZZ.gif</full></image>
+		<rating revid="jvoegele">
+			<grade>9</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>9</grade>
+		</rating>
+	</album>
+</artist>
+
+<artist>
+	<fname>Liz</fname><lname>Phair</lname>
+	<album>
+		<title>Exile in Guyville</title>
+		<image><full>http://images.amazon.com/images/P/B000040JF0.01.LZZZZZZZ.gif</full></image>
+		<rating revid="jvoegele">
+			<grade>9</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>10</grade>
+		</rating>
+	</album>
+</artist>
+
+<artist>
+	<fname>The</fname><lname>Velvet Underground</lname>
+	<album>
+		<title>The Velvet Underground and Nico</title>
+		<image> <full>http://images.amazon.com/images/P/B000002G7C.01.LZZZZZZZ.gif</full> </image>
+		<date> <year>1967</year> </date>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>10</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>10</grade>
+		</rating>
+	</album>
+	<album>
+		<title>White Light/White Heat</title>
+		<image> <full>http://images.amazon.com/images/P/B000002G7E.01.LZZZZZZZ.gif</full> </image>
+		<date> <year>1968</year> </date>
+		<rating revid="jvoegele">
+			<grade>9</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>8</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>9</grade>
+		</rating>
+	</album>
+	<album>
+		<title>The Velvet Underground</title>
+		<image> <full>http://images.amazon.com/images/P/B000002G7G.01.LZZZZZZZ.gif</full> </image>
+		<date> <year>1969</year> </date>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>8</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>10</grade>
+		</rating>
+	</album>
+	<album>
+		<title>Loaded</title>
+		<image> <full>http://images.amazon.com/images/P/B000002LVB.01.LZZZZZZZ.gif</full> </image>
+		<date> <year>1970</year> </date>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>10</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>9</grade>
+		</rating>
+	</album>
+	<album>
+		<title>1969 - Live With Lou Reed</title>
+		<image> <full>http://images.amazon.com/images/P/B000001FOD.01.LZZZZZZZ.gif</full> </image>
+		<date> <year>1969</year> </date>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>9</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>10</grade>
+		</rating>
+	</album>
+	<album>
+		<title>Peel Slowly and See [Box Set]</title>
+		<image> <full>http://images.amazon.com/images/P/B000002GM5.01.LZZZZZZZ.gif</full> </image>
+		<date>
+			<year>1995</year><month>9</month><day>26</day>
+		</date>
+		<rating revid="jvoegele">
+			<grade>10</grade>
+		</rating>
+		<rating revid="RS">
+			<grade>10</grade>
+		</rating>
+		<rating revid="SPIN">
+			<grade>10</grade>
+		</rating>
+	</album>
+</artist>
+
+<!-- 
+
+ -->
+
+</AlbumGuide>

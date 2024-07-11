@@ -1,0 +1,42 @@
+<!-- DTD for Album Collections -->
+
+<!ELEMENT AlbumGuide (reviewer*, artist*)>
+
+<!ELEMENT reviewer		(name, email?, link?)>
+<!ATTLIST reviewer id	ID #REQUIRED>
+
+<!ELEMENT name			(#PCDATA)>
+<!ELEMENT email			(#PCDATA)>
+<!ELEMENT link			(#PCDATA)>
+
+<!ELEMENT artist		((name | (fname, lname)), overview?, album*)>
+
+<!ELEMENT fname			(#PCDATA)>
+<!ELEMENT lname			(#PCDATA)>
+<!ELEMENT overview		(#PCDATA)>
+
+<!ELEMENT album			(title, collaborator*, track*, image?, date?, label?, rating*)>
+<!ELEMENT title			(#PCDATA)>
+<!ELEMENT collaborator	(#PCDATA)>
+<!ELEMENT track			(title, length?)>
+<!ELEMENT length		(#PCDATA)>
+
+<!ELEMENT image			(thumb | full | (thumb, full))>
+<!-- thumb and full are to supply links to thumbnails and full-sized images, respectively -->
+<!ELEMENT thumb			(#PCDATA)>
+<!ELEMENT full			(#PCDATA)>
+
+<!ELEMENT date			(year, month?, day?)>
+<!ELEMENT year			(#PCDATA)>
+<!ELEMENT month			(#PCDATA)>
+<!ELEMENT day			(#PCDATA)>
+
+<!ELEMENT label			(#PCDATA)>
+
+<!ELEMENT rating		(grade, review?)>
+<!-- 'revid' is a reference to the ID for the reviewer who wrote this review -->
+<!ATTLIST rating revid	IDREF #REQUIRED>
+
+<!ELEMENT grade			(#PCDATA)>
+<!ELEMENT review		(title, (content | link))>
+<!ELEMENT content		(#PCDATA)>

@@ -1,0 +1,230 @@
+BODY{
+	margin-top : 0px;
+	margin-left : 0px;
+}
+.oberonNormalHR{
+	color : #656565 ! important;
+	height : 1px; 
+	width : 410px;
+	text-align :left;
+	  
+}
+/* Deprecated
+LI{
+	font-size : 10px;
+}
+.normal{
+	font-size : 10px;
+	color : #414141;
+	background-color: transparent;
+}
+*/
+.oberonPlaceOrder{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 16px ! important;
+	color : green ! important;
+	font-weight : bold ;
+	background-color: transparent ! important;
+}
+.oberonNormalR{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10px ! important;
+	color : #A0322C ! important;
+	background-color: transparent ! important;
+}
+.oberonNormal{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10px ! important;
+	color : #414141 ! important;
+	background-color: transparent ! important;
+}
+A:hover.oberonNormal{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	text-decoration : none ! important;
+	color : #414141 ! important;
+	background-color: transparent ! important;
+}
+A:Visited.oberonNormal{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	color : #414141 ! important;
+	background-color: transparent ! important;
+}
+.oberonNormalSub{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 9px ! important;
+	color : #414141 ! important;
+	background-color: transparent ! important;
+}
+.oberonNormalT{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 8pt ! important;
+	font-weight : bold ! important;
+	color : #666666 ! important;
+	background-color: transparent ! important;
+}
+.oberonNormalInfoType{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 11pt ! important;
+	font-weight : bold ! important;
+	color : #A0322C ! important;
+	background-color: transparent ! important;
+}
+.normalTopHeader{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12pt;
+	font-weight : bold;
+	color : #CE9112;
+	background-color: transparent;
+}
+.normalsubHeader{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 12pt;
+	font-weight : bold;
+	color : #000000;
+	background-color: transparent;
+}
+/* Deprecated
+A{
+	text-decoration : underline;
+	color : #414141;
+	background-color: transparent;
+}
+A:hover{
+	text-decoration : none;
+	color : #414141;
+	background-color: transparent;
+}
+A:Visited{
+	color : #414141;
+	background-color: transparent;
+}
+*/
+A.navL{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10pt ! important;
+	font-weight : bold ! important;
+	color : #414141 ! important;
+	background-color: transparent ! important;
+}
+A.oberonNavM{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10px ! important;
+	font-weight : bold ! important;
+	color : #414141 ! important;
+	background-color: transparent ! important;
+}
+.oberonNavM{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10px ! important;
+	font-weight : bold ! important;
+	color : #414141 ! important;
+	background-color: transparent ! important;
+}
+A.navMbuy{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10px ! important;
+	font-weight : bold ! important;
+	color : #2552A6 ! important;
+	background-color: transparent ! important;
+}
+A:hover.navMbuy{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10px ! important;
+	font-weight : bold ! important;
+	color : #2552A6 ! important;
+	background-color: transparent ! important;
+}
+A:visited.navMbuy{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10px ! important;
+	font-weight : bold ! important;
+	color : #2552A6 ! important;
+	background-color: transparent ! important;
+}
+.oberonGameName{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 8pt ! important;
+	font-weight : bold ! important;
+	color : #A0322C ! important;
+	background-color: transparent ! important;
+	text-decoration : none ! important;
+}
+A.oberonGameName{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 8pt ! important;
+	font-weight : bold ! important;
+	color : #A0322C ! important;
+	background-color: transparent ! important;
+	text-decoration : none ! important;
+}
+A:visited.oberonGameName{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 8pt ! important;
+	font-weight : bold ! important;
+	color : #A0322C ! important;
+	background-color: transparent ! important;
+}
+A.oberonGameNameUnderline{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 8pt ! important;
+	font-weight : bold ! important;
+	color : #A0322C ! important;
+	background-color: transparent ! important;
+}
+A:Hover.oberonGameNameUnderline{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 8pt ! important;
+	font-weight : bold ! important;
+	color : #A0322C ! important;
+	background-color: transparent ! important;
+	text-decoration : none ! important;
+}
+.oberonBorder{
+	border-left: 1px solid #999999 ! important;
+	border-right: 1px solid #999999 ! important;
+}
+.fullBorder{
+	border: 1px solid #5885D9;
+}
+.bulletInfo{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 8pt;
+	color : #414141;
+	background-color: transparent;
+}
+.oberonH1{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 11pt ! important;
+	font-weight : bold ! important;
+	color : #414141 ! important;
+	background-color: transparent ! important;
+	text-transform : uppercase ! important;
+	display : inline ! important;
+}
+.gameSlogan{
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif ! important;
+	font-size : 10pt ! important;
+	font-weight : bold ! important;
+	font-style : italic ! important;
+	color : #2552A6 ! important;
+	background-color: transparent ! important;
+}
+
+/* definitions for toolbar - sizes defined from script*/
+.oberonCToolbOn	, .oberonCToolbOff{ 
+	font-family : Tahoma;
+	border-top: 1px solid #999999;
+	border-bottom: 1px solid #999999;
+	padding-left: 9px;
+	padding-right: 9px;
+	font-weight: bold;
+}	
+.oberonCToolbOn	
+{	
+	background-color: #A0A0A0;
+	color: #FFFFFF;
+}
+.oberonCToolbOff	{ 
+	color: #777777;
+	font-weight: bold;
+}

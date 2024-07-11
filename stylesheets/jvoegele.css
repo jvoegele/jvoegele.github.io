@@ -1,0 +1,29 @@
+	/* Styles for the body tag */
+	BODY { background-color: white; color: black }
+	BODY.depressing {background-color: black color: white }
+
+	/* Header Styles */
+	H1, H2, H3, H4, H5, H6 { color: #333399 }
+
+	/* Standard Text Formatting */
+
+	/* Anchor Styles */
+	A:link { color: blue; text-decoration: none }
+	A:visited { color: purple; text-decoration: none }
+	A:hover { color: white; background-color: blue;text-decoration: bold }
+	A:active { background-color: 00CC66; text-decoration: none }
+
+	/* Miscellaneous Items */
+	EM { text-decoration: bold }
+	PRE { font-family: "Courier New"; font-size: 12pt/14pt; margin-left: 0.5in }
+
+	P.citation { font-family: Times, serif; font-size: 10pt/12pt; margin: 0.5in }
+
+	.verse { margin-left: 0.5in; font: italic 14pt Times, serif }
+	.quote { margin-left: 0.5in; font: italic 14pt/16pt Times, serif }
+	.note { background-color: silver; border: thin groove navy }
+
+	/* Small, Medium, and Large Thematic Breaks */
+	.stb { }
+	.mtb { }
+	.ltb { }

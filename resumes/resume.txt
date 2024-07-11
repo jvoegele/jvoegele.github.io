@@ -1,0 +1,157 @@
+
+                               Jason P. Voegele
+
+   12 Winding Way             jason@jvoegele.com
+   Fort Thomas, KY 41075      http://www.jvoegele.com
+   859-466-0880
+     _________________________________________________________________
+
+Professional Experience
+
+  Consultant, Atos Origin, Inc.
+
+    October 2000 - present
+
+   Serve as developer, architect, designer, team lead, and as
+   mentor/trainer for numerous projects and clients. Recent roles and
+   projects include:
+
+    Architect & Technical Lead
+
+   Salary Planning System, Philips
+     * Developed a web-based HR application for a global client using
+       Java/J2EE technology that provided over 20,000 users, line
+       managers and HR functional managers, the ability to plan, analyze
+       and approve employee salary change transactions with dynamic
+       visibility into the individual action's impact on organizational
+       budgets
+     * Specified the system architecture and design utilizing the UML
+       Analysis and Design Models
+     * Proposed and implemented alternative solutions to original
+       business requirements that led to reduction in project effort and
+       schedule thus saving the client $24,000 in costs
+     * Initiated the use of Struts Web Application Framework, improving
+       our team's ability to create robust web applications at a quicker
+       pace than standard approaches
+     * Designed and developed the core business model and business rules
+       within the application using Java and J2EE technologies
+
+    Architect & Technical Lead
+
+   Sampling and Registration Engine, Procter and Gamble
+     * Developed a web-based system with re-usable components to capture
+       customer registration and survey results allowing consumers to
+       register for product samples and for the client to establish
+       market share data
+     * Reduced software licensing costs by utilizing an open source
+       database and alternative application server approach saving the
+       client $100,000
+     * Implemented Model-View-Controller (MVC) Architecture, enabling
+       multiple developers to work on separate modules simultaneously,
+       reducing effort time for the project and ensuring maintainability
+       of the system
+     * Integrated JUnit testing tool with Apache's Ant build tool to
+       automate unit and regression testing to ensure the stability of
+       the system
+
+    Training Assistant & Project Manager
+
+   Java and Oracle Development Boot Camp, Procter and Gamble
+     * Served as a mentor and project manager for a comprehensive
+       training program consisting of Java and Oracle application
+       development
+     * Developed and presented organization-specific materials for topics
+       not covered in standard training courses
+     * Created technical assessments to evaluate and track student
+       progress
+     * Evaluated and recommended training program curriculum
+     * Prepared functional specifications, including proposed system
+       architecture for internal P&G projects to enable students to gain
+       concrete experience in Java and Oracle technologies while also
+       providing real business value to the organization
+     * Advised students with completion of course exercises and project
+       work
+
+  Software Engineer, Carolla Development, Inc.
+
+    March 1998 - October 2000
+
+   Served as software engineer, consultant, and trainer on various
+   assignments and internal projects. Assignments included:
+
+    Architect & Developer
+
+   Process Management/Workflow Application
+     * Designed and developed a large-scale, distributed Project
+       Management/Workflow application, a Web-based project management
+       tool, which automated many of the tasks associated with a formal
+       software development process
+     * Interfaced with customer advocates for determining project scope
+       and gathering requirements
+     * Created system architecture and design using the UML Analysis
+       Model and Design Model
+     * Developed the system using Java, CORBA, Servlets, XML (DOM and SAX
+       APIs, and DTDs), HTML/CSS, and the Poet Object-Oriented Database
+     * Mentored additional developers in the use of Java and CORBA
+
+    Course Instructor
+
+   Object-Oriented Application Development Training Courses
+
+   Designed and instructed classes on Object-Oriented application design
+   and development and surrounding technologies, including:
+     * Object-Oriented Analysis and Design with UML
+     * Object-Oriented Programming with C++
+     * Object-Oriented Programming with Java
+     _________________________________________________________________
+
+Education and Certifications
+
+   The Ohio State University, 1992 - 1998
+
+   Course of Study: Computer and Information Science
+
+   Sun Certified Programmer for the Java 2 Platform (score 91%)
+   Sun Certified Web Component Developer for the J2EE Platform (score
+   93%)
+     _________________________________________________________________
+
+Activities
+
+   Developed or contributed to several open source projects including:
+     * JRuby: http://jruby.sourceforge.net/
+       Java/Ruby integration project providing a full Ruby interpreter
+       and runtime environment in Java
+     * SmartEiffel Threads: http://sf.net/projects/ethreads/
+       Library providing multi-threading capabilities to the open source
+       SmartEiffel compiler
+     * Ruby Collections: http://sf.net/projects/rubycollections/
+       Collection of fundamental data structures and algorithms for the
+       Ruby programming language
+     _________________________________________________________________
+
+Summary of Technical Experience
+
+     * Programming in Java, C++, C, Eiffel, Ruby, Python, and Perl
+     * Strong knowledge of Object-Oriented software engineering
+       methodologies, Object-Oriented Analysis and Design, Design By
+       Contract, UML, Use-Case-driven development, the Unified Software
+       Development Process, the full Software Development Life Cycle
+       (SDLC), and eXtreme Programming
+     * Strong Web development skills with HTML, CSS, XML, XSLT, Java
+       Servlets, JavaServer Pages, and CGI
+     * Experience with Web and J2EE Application Servers including Apache,
+       BEA WebLogic JRun, WebSphere Application Server, Oracle
+       Application Server, and Inprise Application Server
+     * Client/server development and distributed computing with CORBA,
+       Java RMI, Java Message Service (JMS), SOAP, Web Services, and some
+       DCOM
+     * Application development with Oracle 8i, Sybase, SQL-Server,
+       PostgreSQL, and MySQL databases
+     * Experience with Windows 9x/NT/2000, Linux, and HP-UX development
+       environments
+     _________________________________________________________________
+
+   jason@jvoegele.com
+
+        Last Updated: August 8, 2004

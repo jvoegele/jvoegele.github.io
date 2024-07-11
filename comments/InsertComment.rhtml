@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<%
+require 'cgi'
+require 'WebComments'
+cgi = CGI.new
+
+session = WebComments.session(cgi)
+puts cgi.header
+
+page = session['page_info']
+comment = session['comment']
+WebComments.add_comment(comment)
+%>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<title>Thank You</title>
+	<link rel="stylesheet" href="/stylesheets/fancy.css" type="text/css">
+	<meta name="Author" content="Jason Voegele" />
+</head>
+
+
+<body>
+
+<h1>Thank you for your comments.</h1>
+
+<hr />
+
+<h4>You can:</h4>
+<ul>
+<li>
+	<a href="/<%=page.uri%>">Go back from whence ye came</a>
+	(You may have to hit &quot;Reload&quot; or &quot;Refresh&quot; to see your comments)
+</li>
+<li>
+	<a href="/">Go back home</a>
+</li>
+</ul>
+
+<hr />
+
+<address><a href="mailto:jason@jvoegele.com">jason@jvoegele.com</a></address>
+</body>
+</html>

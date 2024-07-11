@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <title>Merry Christmas!</title>
+    <link rel="stylesheet" type="text/css" href="christmas.css">
+
+    <script type="text/javascript" language="JavaScript">
+        function showGift() {
+            var tree = document.getElementById("tree");
+            var gift = document.getElementById("gift");
+            tree.style.display = "none";
+            tree.visible = false;
+            gift.style.display = "block";
+            gift.visible = true;
+        }
+    </script>
+</head>
+<body>
+    <div class="message-box">
+        <h1>Merry Christmas!</h1>
+        <div id="tree">
+            <p>Click on the Christmas tree to get your gift!</p>
+            <img src="Xmastree3.gif" onclick="showGift()"/>
+        </div>
+        <div id="gift" style="display: none">
+            <table align="center" width="1">
+                <tr>
+                    <td colspan="2"><img src="bookworm.jpg" /></td>
+                </tr>
+                <tr>
+                    <td colspan='2'>
+                        <a href="http://www.incredigames.com/exe/Bookworm_Adventure-setup.exe?RefId=5003&lc=en&origin=pgame_dl_u&ext=Bookworm_Adventure-setup.exe"
+                        >Click here to download your game!</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>E-Mail Address</th>
+                    <td>jason@jvoegele.com</td>
+                </tr>
+                <tr>
+                    <th nowrap>Registration Key</th>
+                    <td>
+                        4817-A39F-3131-ED3F-0764-C622-
+                        0B19-3F44-E32F-567C-D246-2448
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h2>Love Jason, Jenn, Alex, and Nicholas</h2>
+    </div>
+</body>
+</html>

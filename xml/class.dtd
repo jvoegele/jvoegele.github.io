@@ -1,0 +1,22 @@
+<!-- Copyright 1999 by Carolla Development, Inc. -->
+<!-- @author:  Jason Voegele (jvoegele@carolla.com) -->
+<!-- @version: 0.2 08/12/1999 -->
+
+<!ELEMENT class		(name, parent?, description?, attribute*, 
+					 service*, component*, invariant?, note*) >
+
+<!ELEMENT name			(#PCDATA) >
+<!ELEMENT parent		(#PCDATA) >
+<!ELEMENT description	(#PCDATA) >
+<!ELEMENT attribute		(name, type?, description?, precondition?, postcondition?) >
+<!ELEMENT service		(name, type?, param*, description?, precondition?, postcondition?) >
+<!ELEMENT type			(#PCDATA) >
+<!ELEMENT precondition	(assertion*) >
+<!ELEMENT postcondition	(assertion*) >
+<!ELEMENT param			(name, type?) >
+<!ELEMENT assertion		(label, axiom) >
+<!ELEMENT label			(#PCDATA) >
+<!ELEMENT axiom			(#PCDATA) >
+<!ELEMENT component		(name) >
+<!ELEMENT invariant		(assertion*) >
+<!ELEMENT note			(#PCDATA) >

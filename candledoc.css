@@ -1,0 +1,263 @@
+BODY {
+	color:		black;
+	background:	#FFFFF5;
+
+	margin-top:		1.58em;
+	margin-left:	5%;
+	margin-right:	2%;
+	margin-bottom:	1.58em;
+	font-family:	Verdana, 'Myriad Web', Syntax, sans-serif;
+	font-size:		0.8em;
+}
+
+	/* Standard Text Formatting */
+	.level2 { margin-left: 0.25in }
+	.level3 { margin-left: 0.5in }
+	.level4 { margin-left: 0.75in }
+	.level5 { margin-left: 1.0in }
+	.level6 { margin-left: 1.25in }
+	.level7 { margin-left: 1.5in }
+	.level8 { margin-left: 1.75in }
+	.level9 { margin-left: 2.0in }
+	
+	.section1 {  }
+	.section2 { margin-left: 0.25in; }
+	.section3 { margin-left: 0.5in }
+	.section4 { margin-left: 0.75in }
+	.section5 { margin-left: 1.0in }
+	.section6 { margin-left: 1.25in }
+	.section7 { margin-left: 1.5in }
+	.section8 { margin-left: 1.75in }
+	.section9 { margin-left: 2.0in }
+
+
+
+H1, H2, H3, H4, H5, H6, DT, TH, THEAD TD, TFOOT	{
+	font-family:	Georgia, 'Minion Web', Palatino, 'Book Antiqua', Utopia, 'Times New Roman', serif;
+	color:		#C00;
+}	
+
+H1 {
+	font-size:		2.1em;
+	font-weight:	bold;
+	font-style:		normal;
+	text-shadow:	gray 5px 5px 3px;
+}
+
+.section1 H1 {
+	border:			thin solid black;
+}
+
+H1.docheader {
+	font-size:		2.1em;
+	font-weight:	bold;
+	font-style:		normal;
+	text-shadow:	gray 5px 5px 3px;
+	text-align:		center;
+	border:			0px hidden gray;
+}
+
+H2 {
+	font-size:	1.75em;
+	font-weight:	500;
+	font-style:	normal;
+}
+
+H3 {
+	font-size:	1.58em;
+	font-weight:	600;
+	font-style:	italic;
+}
+
+H4 {
+	font-size:	1.33em;
+	font-weight:	600;
+	font-style:	normal;
+}
+
+H5, THEAD TD {
+	font-size:	1.17em;
+	font-weight:	600;
+	font-style:	italic;
+}
+
+H6 {
+	font-size:	1.0em;
+	font-weight:	700;
+	font-style:	normal;
+	letter-spacing:	.1em;
+	text-transform:	small-caps;
+}
+
+
+A:link	{	
+	text-decoration:	none;
+	font-weight:	bold; 
+	color:	#33F;
+}
+		
+A:visited	{	
+	text-decoration:	none;
+	font-weight:	bold;
+	color:	#93C;
+}
+		
+A:active	{	
+	text-decoration:	none;
+	font-weight:	bold;
+	color:	black;
+	background:	#CCF;
+}
+		
+A:hover	{	
+	text-decoration:	none;
+	color:	#FFFFF5;
+	background:	#33F;
+}
+		
+A.offsite	{	
+	text-decoration:	none;
+	font-weight:	normal;
+	color:	#33F;
+}
+
+UL, UL LI {
+	font-family:	Verdana, 'Myriad Web', Syntax, sans-serif;
+}
+
+
+TABLE {
+	border:			1px solid black;
+	padding:		0px;
+	font-family:	Verdana, 'Myriad Web', Syntax, sans-serif;
+	font-size:		0.9em;
+	cell-spacing:	0px;
+}
+
+THEAD {
+	border:			none;
+	background:		silver;
+}
+
+THEAD TD, TR.divider, .divider TD, .divider TH {
+	background:		silver;
+	font-size:		1.2em;
+	border-top:		1px dashed black;
+	border-bottom:	1px dashed black;
+	border-right:	none;
+	border-left:	none;
+	text-align:		left;
+}
+
+TR {
+	display:		block;
+	border-bottom:	1px dashed gray;
+	border-top:		none;
+	border-right:	none;
+	border-left:	none;
+}
+
+
+	
+
+TD {
+	border-top:		1px dashed gray;
+	border-bottom:	1px hidden gray;
+	border-right:	0px hidden gray;
+	border-left:	none;
+	cell-spacing:	0px;
+	padding-top:	0px;
+	padding-bottom:	0px;
+	padding-left:	7px;
+	padding-right:	7px;
+	margin-left:	0px;
+	margin-right:	0px;
+	margin-top:		0px;
+	margin-bottom:	0px;
+}
+
+TD.rowheader {
+	border-top:		1px dashed gray;
+	border-bottom:	1px hidden gray;
+	border-right:	0px hidden gray;
+	border-left:	none;
+	cell-spacing:	0px;
+	padding-top:	0px;
+	padding-bottom:	0px;
+	padding-left:	7px;
+	padding-right:	7px;
+	margin-left:	0px;
+	margin-right:	0px;
+	margin-top:		0px;
+	margin-bottom:	0px;
+	font-style:		italic;
+	font-weight:	bold;
+	vertical-align:	top;
+}
+
+
+DT {
+	font-weight:	bold;
+	font-variant:	small-caps;
+}
+
+PRE	{	
+	font-family:	'Monotype.com', Courier New, monospace;
+}
+
+EM	{	
+	font-style:	normal;
+	font-weight:	bold;
+}
+		
+STRONG	{	
+	font-style:		italic;
+	font-weight:	bold;
+}
+		
+EM STRONG, STRONG EM	{	
+	text-transform:	uppercase;
+	font-style:	normal;
+	font-weight:	bolder;
+}
+
+HR {
+	color:		black;
+	margin-top:	.5em;
+	margin-bottom:	.75em;
+	height:	1px;
+}
+
+HR.page_break {
+	page-break-after: auto;
+}
+
+.verse {
+	white-space:	pre;
+	font-family:	Georgia, 'Minion Web', Palatino, 'Book Antiqua', Utopia, 'Times New Roman', serif;
+	font-style:		italic;
+	font-size:		1.0em;
+	margin-left:	0.5in;
+}
+
+.header {
+	font-size:		0.7em;
+	margin-top:		0in;
+	margin-bottom:	0in;
+	margin-left:	0in;
+	margin-right:	0in;
+	text-indent:	0in;
+	background:		silver;
+}
+
+.coverpage {
+	text-align:		center;
+}
+
+.note {
+	background:	silver;
+	border:		thin solid blue;
+}
+
+.instruction { visibility: hidden; font-size: 0pt; margin: 0.0in; padding: 0.0in }
+.boilerplate { font-size: 8pt }

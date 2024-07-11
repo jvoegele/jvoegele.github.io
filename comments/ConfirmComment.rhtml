@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+
+<%
+require 'cgi'
+require 'WebComments'
+cgi = CGI.new
+
+session = WebComments.session(cgi)
+
+page = session['page_info']
+comment = WebComments::Comment.new(page.page_id, cgi['name'][0], cgi['email'][0],
+                                  cgi['message'][0], cgi['format'][0] == 'html')
+session['comment'] = comment
+puts cgi.header
+%>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Comment Confirmation</title>
+    <link rel="stylesheet" href="/stylesheets/fancy.css" type="text/css">
+    <meta name="Author" content="Jason Voegele" />
+</head>
+
+<body>
+<h1>Confirm Your Comment</h1>
+for <em><%=page.title%></em>
+
+<p>
+When submitted, your comment will appear as follows:
+</p>
+
+<hr />
+<%=comment.text%>
+<hr />
+
+<p>
+<% if cgi['format'][0] == 'html' %>
+If you see a bunch of funny-looking HTML tags in your comment, then you probably
+should have chosen "Plain Text" as your format type.
+<% else %>
+If your comment appears to have been formatted strangely, you probably should
+have chose "HTML" as your format type.
+<% end %>
+If so, hit your browser's back button and try again.
+</p>
+
+<p>If you're happy with your comment, click "Submit Comment"</p>
+
+<form method="POST" action="/comments/InsertComment.rhtml">
+    <input type="submit" name="confirm" value="Submit Comment" />
+</form>
+</body>
+</html>

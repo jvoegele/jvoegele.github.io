@@ -1,0 +1,231 @@
+BODY {
+	color:		black;
+	background:	#FFFFF5;
+
+	margin-top:		1.58em;
+	margin-left:	11%;
+	margin-right:	8%;
+	margin-bottom:	1.58em;
+	font-family:	Verdana, 'Myriad Web', Syntax, sans-serif;
+	/*font-size:		0.8em;*/
+}
+
+H1, H2, H3, H4, H5, H6, DT, TH, THEAD TD, TFOOT	{
+	font-family:	Georgia, 'Minion Web', Palatino, 'Book Antiqua', Utopia, 'Times New Roman', serif;
+	color:			#C00;
+}	
+
+H1 {
+	font-size:		2.1em;
+	font-weight:	bold;
+	font-style:		normal;
+	text-shadow:	gray 5px 5px 3px;
+}
+
+H2 {
+	font-size:	1.75em;
+	font-weight:	500;
+	font-style:	normal;
+}
+
+H3 {
+	font-size:	1.58em;
+	font-weight:	600;
+	font-style:	italic;
+}
+
+H4 {
+	font-size:	1.33em;
+	font-weight:	600;
+	font-style:	normal;
+}
+
+H5, THEAD TD {
+	font-size:	1.17em;
+	font-weight:	600;
+	font-style:	italic;
+}
+
+H6 {
+	font-size:	1.0em;
+	font-weight:	700;
+	font-style:	normal;
+	letter-spacing:	.1em;
+	text-transform:	uppercase;
+}
+
+
+A:link	{	
+	text-decoration:	none;
+	font-weight:	bold; 
+	color:	#33F;
+}
+		
+A:visited	{	
+	text-decoration:	none;
+	font-weight:	bold;
+	color:	#93C;
+}
+		
+A:active	{	
+	text-decoration:	none;
+	font-weight:	bold;
+	color:	black;
+	background:	#CCF;
+}
+		
+A:hover	{	
+	text-decoration:	none;
+	color:	#FFFFF5;
+	background:	#33F;
+}
+		
+A.offsite	{	
+	text-decoration:	none;
+	font-weight:	normal;
+	color:	#33F;
+}
+
+UL, UL LI {
+	font-family:	Verdana, 'Myriad Web', Syntax, sans-serif;
+}
+
+.borderless {
+	border:		none;
+}
+
+TABLE {
+	border:			1px solid black;
+	padding:		0px;
+	font-family:	Verdana, 'Myriad Web', Syntax, sans-serif;
+	font-size:		0.9em;
+	margin:			0px;
+}
+
+
+THEAD {
+	border:			none;
+	background:		silver;
+}
+
+
+THEAD TD, THEAD TH {
+	background:		silver;
+	border-top:		1px solid black;
+	border-bottom:	1px solid black;
+	border-right:	none;
+	border-left:	none;
+	margin:			0px;
+}
+
+TR {
+	display:		block;
+	border-bottom:	1px dashed gray;
+	border-top:		none;
+	border-right:	none;
+	border-left:	none;
+	margin:			0px;
+}
+
+.borderless TR {
+	border:		none;
+}
+
+TR.artist, TR.author {
+/*
+	border-top:		1px solid gray;
+	border-bottom:	1px hidden gray;
+	border-right:	0px hidden gray;
+	border-left:	none;
+*/
+	background:		silver;
+	padding-top:	0px;
+	padding-bottom:	0px;
+	padding-left:	7px;
+	padding-right:	7px;
+	margin:			0px;
+	font-weight:	bold;
+	vertical-align:	top;
+}
+
+
+TD, TH {
+/*
+	border-top:		1px solid gray;
+	border-bottom:	1px hidden gray;
+	border-right:	0px hidden gray;
+	border-left:	none;
+*/
+	border:			1px solid gray;
+	padding-top:	0px;
+	padding-bottom:	0px;
+	padding-left:	7px;
+	padding-right:	7px;
+	margin:			0px;
+}
+
+.borderless TD {
+	border:	none;
+}
+
+TD.title {
+	padding-left:	20px;
+	font-style:		italic;
+}
+
+TD.rating {
+	font-size:		0.8em;
+}
+
+PRE	{	
+	font-family:	'Monotype.com', Courier New, monospace;
+}
+
+EM	{	
+	font-style:		normal;
+	font-weight:	bold;
+}
+		
+STRONG	{	
+	font-style:		italic;
+	font-weight:	bold;
+}
+		
+EM STRONG, STRONG EM	{	
+	text-transform:	uppercase;
+	font-style:	normal;
+	font-weight:	bolder;
+}
+
+HR {
+	color:		black;
+	margin-top:	.5em;
+	margin-bottom:	.75em;
+	height:	1px;
+}
+
+.verse {
+	white-space:	pre;
+	font-family:	Georgia, 'Minion Web', Palatino, 'Book Antiqua', Utopia, 'Times New Roman', serif;
+	font-style:		italic;
+	font-size:		1.0em;
+	margin-left:	0.5in;
+}
+
+.header, .navbar {
+	font-size:		0.7em;
+	margin-top:		0in;
+	margin-bottom:	0in;
+	margin-left:	0in;
+	margin-right:	0in;
+	text-indent:	0in;
+	background:		silver;
+}
+
+.note {
+	border:	thin solid blue;
+	background:	silver;
+}
+
+P.instruction { visibility: hidden; font-size: 0pt; margin: 0.0in; padding: 0.0in }
+P.boilerplate { font-size: 8pt }

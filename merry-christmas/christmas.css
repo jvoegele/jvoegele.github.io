@@ -1,0 +1,14 @@
+body {
+    font-family: arial;
+    background: url(wreath.gif) #FFFFFF repeat left;
+}
+
+.message-box {
+    background: #FF99CC;
+    border: thin solid green;
+    width: 50%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 10%;
+}
+

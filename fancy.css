@@ -1,0 +1,120 @@
+BODY {
+	background:			url(images/background.jpg) #FFFFFF repeat-y left;
+	color:				black;
+	margin-top:			1.58em;
+	margin-left:		11%;
+	margin-right:		8%;
+	margin-bottom:		1.58em;
+	padding-top:		0;
+	padding-left:		0;
+	padding-right:		0;
+	padding-bottom:		0;
+	border-top:			0;
+	border-left:		0;
+	border-bottom:		0;
+	border-right:		0;
+	width:				auto;
+	/*font-family:		Times, serif;*/
+	font-family: arial;
+}
+
+H1, H2, H3, H4, H5, H6, DT, TH, THEAD TD, TFOOT {
+	color:	#336699;
+	font-family: Times, serif;
+}
+
+TH, THEAD TD, TFOOT {
+	font-weight:		bold;
+	font-style:			italic;
+}
+
+THEAD, THEAD TD, TFOOT, TFOOT TD {
+	background-color:	silver;
+}
+
+TABLE.data, TABLE.data TR, TABLE.data TD, TABLE.data TH {
+	border: thin solid gray;
+}
+
+TABLE.data TR, TABLE.data TD, TABLE.data TH {
+	padding-top: 0;
+	margin-top: 0;
+	letter-spacing: 0px;
+}
+
+A:link {
+	text-decoration:	underline;
+	font-weight:		bold;
+}
+		
+A:visited {
+	text-decoration:	underline;
+	font-weight:		bold;
+}
+		
+
+A:active {
+	background-color: 00CC66;
+	text-decoration: none;
+	font-weight:		bold;
+}
+		
+A:hover	{
+	color:				white;
+	background-color:	blue;
+	text-decoration:	underline;
+	font-weight:		bold;
+}
+		
+A.offsite {
+	color:				navy;
+	text-decoration:	underline;
+	font-weight:		normal;
+}
+
+HR {
+	color:		black;
+	margin-top:	.5em;
+	margin-bottom:	.75em;
+	height:	1px;
+}
+
+BLOCKQUOTE {
+	color:				maroon;
+	font-weight:		bold;
+	/*font-style:			italic;*/
+}
+
+.attribution {
+	color:				maroon;
+	font-style:			italic;
+}
+
+.verse {
+	white-space:	pre;
+	font-style:		italic;
+	font-weight:	bold;
+	color:			green;
+}
+
+.header, .navbar {
+	font-size:		0.7em;
+	margin-top:		0in;
+	margin-bottom:	0in;
+	margin-left:	0in;
+	margin-right:	0in;
+	text-indent:	0in;
+	background:		silver;
+	width:			100%
+}
+
+.warning {
+	background:		silver;
+	color:			red;
+	font-weight:	bold;
+	text-transform:	uppercase;
+}
+
+.verse { margin-left: 0.5in; font: italic 14pt Times, serif }
+.quote { margin-left: 0.5in; font: italic 14pt/16pt Times, serif }
+.note { background-color: silver; border: thin groove navy }

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Terabyte Scale for JRuby and Rails</title>
+	<link href="http://jvoegele.com/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="http://jvoegele.com/syntaxhighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="http://jvoegele.com/syntaxhighlighter/scripts/shAutoloader.js"></script>
+	<script type="text/javascript" src="http://jvoegele.com/syntaxhighlighter/scripts/shBrushRuby.js"></script>
+	<script type="text/javascript" src="http://jvoegele.com/syntaxhighlighter/scripts/shBrushJava.js"></script>
+	<script type="text/javascript" src="http://jvoegele.com/syntaxhighlighter/scripts/shBrushPlain.js"></script>
+
+	<style>
+		pre.syntax, .syntax {
+			margin: 1em;
+			padding: 0.5em;
+			border: thick dashed red;
+		}
+	</style>
+	<script type="text/javascript">
+		SyntaxHighlighter.config.bloggerMode = true;
+		SyntaxHighlighter.defaults['toolbar'] = false;
+		SyntaxHighlighter.defaults['class_name'] = "syntax";
+	  SyntaxHighlighter.all();
+	</script>
+
+</head>
+
+<body>
+<h1>Terabyte Scale for JRuby and Rails</h1>
+
+<p>In this, my inaugural blog post, I'm going to explain how you can use Ehcache and Terracotta from your JRuby and Rails applications.  <a href="http://www.ehcache.org/">Ehcache</a> is the most popular open source caching solution in the Java landscape and Terracotta's Enterprise Ehcache provides the ultimate in scalability allowing you to store over a terabyte of data in a fully coherent cache.  And now you can use it to provide unprecedented levels of scale to the Rails world.</p>
+
+<h2>A Little Bit of History</h2>
+
+<p>I work at Terracotta and one of the fun things we do there is to have a semi-annual "dev week", during which the whole distributed team gathers together in our San Francisco office to collaborate in person.  During our last dev week we had a product improvement competition and my entry into the competition was a set of Ruby Gems to provide integration between Ehcache and JRuby/Rails.  To do this, I built on top of the <a href="http://github.com/dylanz/ehcache">work done by Dylan Stamat</a>, who originally created the JRuby Ehcache integration.  As with so many other open-source projects maintained by people in their free time, this project had been lying dormant for some time while Dylan was busy with other obligations.  I decided to pick up where Dylan left off and as a result of this there is a new set of Ruby Gems for working with Ehcache from JRuby, Rails 2, and Rails 3.</p>
+
+<p>Caching in Rails has traditionally been done using memcached, either directly using the Memcache API or using the Rails caching API with a memcached backend.  While this has worked fairly well for most people, there are some limitations to memcached that have led some to seek alternative solutions.  If you limit yourself to solutions that work with the standard C implementation of Ruby ("Matz's Ruby Implementation") then memcached is likely your best bet.  However, if you are able to use JRuby, a whole new universe of caching solutions emerges, now including the very popular Ehcache.</p>
+
+<h2>Using Ehcache with JRuby</h2>
+
+<p>Ehcache JRuby integration is provided by the jruby-ehcache gem.  To install it simply execute:</p>
+<pre class="brush: plain">jgem install jruby-ehcache</pre>
+<p>Ehcache configuration is done with the ehcache.yml YAML file.  The jruby-ehcache gem includes a default ehcache.yml file, but if you would like to customize it you can copy the ehcache.yml file bundled with the gem and place it in your $HOME/lib/config directory and then edit it as you see fit.</p>
+
+<p>Now it is time to start using Ehcache.  Let's take a look at a simple example that uses the Ehcache::CacheManager to create a cache, and then puts and gets some date in the cache.</p>
+<pre class="brush: ruby">require 'ehcache'
+
+manager = Ehcache::CacheManager.new
+cache = manager.cache
+
+cache.put("answer", "42", {:ttl =&gt; 120})
+answer = cache.get("answer")
+puts "Answer: #{answer}"
+question = cache.get("question") || 'unknown'
+puts "Question: #{question}"
+
+manager.shutdown</pre>
+
+<p>As you can see from the example, you create a cache using CacheManager.new, and you can control the "time to live" value of a cache entry using the :ttl option in cache.put.  Note that not all of the Ehcache API is currently exposed in the JRuby API, but most of what you need is available and we plan to add a more complete API wrapper in the future.</p>
+
+<h2>Using Ehcache in Rails Applications</h2>
+
+<p>To use Ehcache from a Rails application you must first install the correct gem for your Rails version.</p>
+
+<pre class="brush: plain">jgem install jruby-ehcache-rails2 # for Rails 2
+jgem install jruby-ehcache-rails3 # for Rails 3</pre>
+
+<p>Configuration of Ehcache is still done with the ehcache.yml file, but for Rails applications you must place this file in the config directory of your Rails app.  Note that you must use JRuby to execute your Rails application, as these gems utilize JRuby's Java integration to call the Ehcache API.</p>
+
+<p>With this configuration out of the way, you can now use the Ehcache API directly from your Rails controllers and/or models.  You could of course create a new Cache object everywhere you want to use it, but it is better to create a single instance and make it globally accessible by creating the Cache object in your Rails environment.rb file.  For example, you could add the following lines to config/environment.rb:</p>
+
+<pre class="brush: ruby">require 'ehcache'
+EHCACHE = Ehcache::CacheManager.new.cache</pre>
+
+<p>By doing so, you make the EHCACHE constant available to all Rails-managed objects in your application.  Using the Ehcache API is now just like the above JRuby example.</p>
+
+<p>If you are using Rails 3 then you have a better option at your disposal: the built-in Rails 3 caching API.  This API provides an abstraction layer for caching underneath which you can plug in any one of a number of caching providers.  ﻿The most common provider to date has been the memcached provider, but now you can also use the Ehcache provider.  Switching to the Ehcache provider requires only one line of code in your Rails environment file:</p>
+
+<pre class="brush: ruby">config.cache_store = :ehcache_store</pre>
+
+<p>A very simple example of the Rails caching API is as follows:</p>
+
+<pre class="brush: ruby">Rails.cache.write("answer", "42")
+Rails.cache.read("answer")  # => '42'</pre>
+
+<p>Using this API, your code can be agnostic about the underlying provider, or even switch providers based on the current environment (e.g. memcached in development mode, Ehcache in production).</p>
+
+<p>If you'd like to see a complete example of an Ehcache-enabled Rails application, check out this demo that I wrote to show Ehcache in action:</p>
+
+<p><a href="https://svn.terracotta.org/repo/forge/projects/ehcache-rails-demo/trunk">https://svn.terracotta.org/repo/forge/projects/ehcache-rails-demo/trunk</a></p>
+
+<h2>Conclusion</h2>
+
+<p>With Ehcache plugged into your Rails application you have a whole slew of options to address all of those Enterprisey concerns.  With Terracotta's Enterprise Ehcache product you can have the ultimate in scalability by taking advantage of <a href="http://ehcache.org/documentation/distributed_caching.html">distributed caching</a> or eliminating Java garbage collection pauses with <a href="http://ehcache.org/documentation/offheap_store.html">BigMemory</a>.  Plug in the <a href="http://www.terracotta.org/documentation/3.1.x/product-documentation-15.html">Terracotta Server Array</a> behind your clustered Rails application and you can store hundreds of millions of keys in your cache, and over a terabyte of data.</p>
+
+<p>If you'd like to use Rails for your web app but your boss has concerns about scalability, Ehcache might just be for you.</p>
+
+</body>
+</html>

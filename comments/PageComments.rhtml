@@ -1,0 +1,51 @@
+<%
+require 'cgi'
+require 'WebComments'
+
+cgi = CGI.new
+
+standalone = (cgi['standalone'] == 'true')
+
+if standalone then
+%>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <title>Reader's Comments</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/fancy.css" />
+</head>
+<body>
+<%
+end # if standalone
+%>
+
+<center><h3>Reader's Comments</h3></center>
+
+<%
+page_id = cgi['page_id']
+WebComments.find_comments_by_page(page_id) do |comment|
+%>
+<div class="UserComment">
+    <p>
+    <%=comment.text%>
+    </p>
+    <p>-- <a href="mailto:<%=comment.email%>"><%=comment.name%></a>,
+    <%=comment.created_date%>
+    </p>
+</div>
+<% end %>
+
+<form method="POST" action="/comments/AddCommentForm.rhtml">
+    <input type="hidden" name="page_id" value="<%=page_id%>" />
+    <center><input type="submit" value="Add a Comment"></center>
+</form>
+
+<%
+if standalone then
+%>
+</body>
+</html>
+<% end %>

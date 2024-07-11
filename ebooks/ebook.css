@@ -1,0 +1,209 @@
+/*
+Color scheme:
+  light blue: #0995E6
+  blue:       #066399
+  orangeish:  #E6A309
+  brownish:   #995406
+  black:      #1A1A1A
+  off-white:  #E5E5E5
+*/
+
+BODY {
+  color:        black;
+  background:   url(http://www.w3.org/StyleSheets/Core/source/graphics/textura.GIF) #E5E5E5;
+}
+
+DIV.body {
+  margin-left:  14em;
+  margin-right: 2em;
+}
+
+H1 {
+  color: rgb(9,149,230);
+  font-family: cursive, serif;
+}
+H2 {
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+H1.doctitle {
+  font-style: italic;
+}
+
+H2.doctitle { font-style: italic }
+
+DIV.header {
+  display: block;
+  border-bottom: thin solid black;
+}
+DIV.header IMG {
+  float: right;
+}
+
+DIV.sidebar {
+  position: absolute;
+  top: 120px;
+  left: 5px;
+  margin: 5px;
+  width: 12em;
+}
+
+DIV#about-me {
+  background-color: #EEEEFF;
+  border: thin groove black;
+  padding: 5px;
+}
+DIV#about-me img, DIV.testimonial img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+DIV.qa {
+}
+
+.question {
+  background-color: #1A1A1A;
+  color: white;
+  font-size: x-large;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #BEE5FC;
+  border-radius: 10px;
+  padding: 0.5em;
+  -moz-box-shadow: 5px 5px 5px #777777;
+  -webkit-box-shadow: 5px 5px 5px #777777;
+  box-shadow: 5px 5px 5px #777777;
+}
+.answer {
+  padding-left: 1em;
+  text-align: justify;
+}
+
+DIV#testimonials {
+  background-color: #EEEEFF;
+  border: thin groove black;
+}
+
+DIV.testimonial {
+  padding: 5px;
+}
+
+/* Standard Text Formatting */
+P.chapter_intro:first-letter {
+  font-family: cursive, serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: xx-large;
+	color: rgb(9,149,230);
+}
+
+A:link {
+	text-decoration: underline;
+}
+		
+A:visited {
+	text-decoration:	underline;
+}
+
+A:active {
+	background-color: #00CC66;
+	text-decoration: none;
+}
+		
+A:hover	{
+	color: white;
+	background-color:	rgb(9,149,230);
+	text-decoration:	underline;
+}
+		
+A.offsite {
+	color:				navy;
+	text-decoration:	underline;
+	font-weight:		normal;
+}
+/*
+HR {
+	color:		black;
+	margin-top:	.5em;
+	margin-bottom:	.75em;
+	height:	1px;
+}
+*/
+/* Miscellaneous Items */
+EM { text-decoration: bold }
+PRE { font-family: "Courier New"; font-size: 12pt/14pt; margin-left: 0.5in }
+
+DIV.code {
+	display: block;
+	color: navy;
+	font-style: italic;
+	margin-left: 0.75in;
+	white-space: pre;
+}
+
+SPAN.code {
+	display: inline;
+	color: navy;
+	font-style: italic;
+}
+SPAN.keyword { display: inline; color: navy; text-decoration: none; font-style: plain; font-weight: bold }
+SPAN.comment { display: inline; color: navy; text-decoration: none; font-style: plain; }
+
+.principle {
+	background-color: #EEEEFF; 
+	border: thin groove black; 
+	margin-left: 1.0in;
+	margin-right: 1.0in
+}
+.principle H3 { text-align: center }
+.definition {
+	background-color: #EEEEFF; 
+	border: thin groove black; 
+	margin-left: 1.0in;
+	margin-right: 1.0in
+}
+.definition H3 { text-align: center }
+
+DIV.adt {
+	background-color: #EEEEFF; 
+	border: thin groove black; 
+	margin-left: 1.0in;
+	margin-right: 1.0in
+}
+
+TABLE {
+	border: thin groove black;
+  border-collapse: collapse;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+TH {
+  background-color: #EEEEFF;
+}
+
+TD, TH {
+  border: thin groove black;
+  padding: 0.3em;
+}
+
+TD.nowrap {
+  white-space: nowrap;
+}
+
+.aside { 
+	display: block; 
+	font: 10pt/12pt Times, serif; 
+	margin-left: 0.5in; 
+	margin-right: 0.5in 
+}
+
+.urgent { font-style: italic; font-weight: bold; color: red }
+
+.citation { font-family: Times, serif; font-size: 10pt/12pt; margin: 0.5in }
+
+.verse { margin-left: 0.5in; font: italic 12pt/14pt Times, serif }
+.quote { margin-left: 0.5in; font: italic 14pt/16pt Times, serif }
+.note { background-color: silver; border: thin groove navy }

@@ -1,0 +1,18 @@
+<!--
+	Document Type Definition for Query Manager query configuration files.
+-->
+
+<!ELEMENT query-collection (query-class?, date-format?, velocity-global?, query*)>
+<!ATTLIST query-collection namespace CDATA #IMPLIED>
+
+<!ELEMENT query-class (#PCDATA)>
+<!ELEMENT date-format (#PCDATA)>
+
+<!ELEMENT velocity-global (#PCDATA)>
+
+<!ELEMENT query (#PCDATA)>
+<!ATTLIST query
+    id ID #REQUIRED
+    description CDATA #IMPLIED
+    class CDATA #IMPLIED
+>

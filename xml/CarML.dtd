@@ -1,0 +1,71 @@
+<!-- 
+	Document Type Definition for Carolla Development's
+	"Carolla Markup Language", CarML
+-->
+<!-- Copyright 1999 by Carolla Development, Inc. -->
+<!-- @author:  Jason Voegele (jvoegele@carolla.com) -->
+<!-- @version: 0.3 01/27/2000 -->
+
+
+<!ELEMENT CarML			(title, author+, header?, footer?, front-matter?, body, back-matter?)>
+<!ATTLIST CarML			status (NOT_STARTED, UNDER_CONSTRUCTION, UNDER_REVISION, AWAITING_REVIEW, APPROVED) #REQUIRED>
+<!ATTLIST CarML			document-type CDATA #REQUIRED>
+<!ELEMENT title			(#PCDATA)>
+<!ELEMENT author		(#PCDATA)>
+<!ATTLIST author		id ID #REQUIRED>
+
+<!ELEMENT header		(left?, center?, right?)>
+<!ELEMENT footer		(left?, center?, right?)>
+<!ELEMENT left			(#PCDATA)>
+<!ELEMENT center		(#PCDATA)>
+<!ELEMENT right			(#PCDATA)>
+
+<!ELEMENT front-matter	(cover-page?, revision-history?, about-page?, TOC? )>
+
+<!ELEMENT cover-page	(client, project, document-type, date, version)>
+<!ELEMENT client		(#PCDATA)>
+<!ELEMENT project		(#PCDATA)>
+<!ATTLIST project		id ID #REQUIRED>
+<!ELEMENT document-type	(#PCDATA)>
+<!ELEMENT date			(year, month?, day?)>
+<!ELEMENT year			(#PCDATA)>
+<!ELEMENT month			(#PCDATA)>
+<!ELEMENT day			(#PCDATA)>
+<!ELEMENT version		(#PCDATA)>
+
+
+<!ELEMENT revision-history	(revision*)>
+<!ELEMENT revision			(version, date, description, author)>
+<!ELEMENT description		(#PCDATA)>
+
+<!ELEMENT about-page	(purpose, client, audience, version, date, location, author, copyright)>
+<!ELEMENT purpose		(#PCDATA)>
+<!ELEMENT audience		(#PCDATA)>
+<!ELEMENT location		(#PCDATA)>
+<!ELEMENT copyright		(#PCDATA)>
+
+<!-- Table of Contents -->
+<!ELEMENT TOC			((header, (page | link))*)>
+<!ELEMENT header		(#PCDATA)>
+<!ELEMENT page			(#PCDATA)>
+<!ELEMENT link			(#PCDATA)>
+
+<!ELEMENT body			(section+)>
+
+<!-- Sections are recursive -->
+<!ELEMENT section		( ((title, instruction?, overview?, content) | (section))* )>
+<!ATTLIST section		id ID #REQUIRED>
+<!ELEMENT instruction	(#PCDATA)>
+<!ELEMENT overview		(#PCDATA)>
+<!ELEMENT content		(#PCDATA)>
+
+
+<!ELEMENT back-matter	(appendix*, bibliograpy*, glossary*, index*)>
+<!ELEMENT appendix		(section+)>
+<!ELEMENT bibliograpy	(reference*)>
+<!ELEMENT reference		(source, date?, location?)>
+<!ELEMENT source		(#PCDATA)>
+<!ELEMENT glossary		((term, definition)+)>
+<!ELEMENT term			(#PCDATA)>
+<!ELEMENT definition	(#PCDATA)>
+<!ELEMENT index			((term, (link | page)*)>

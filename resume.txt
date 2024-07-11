@@ -1,0 +1,262 @@
+Jason P. Voegele
+
+OBJECTIVE
+---------
+
+Full-time software development or technical leadership position utilizing my
+experience in application development, Internet development, and distributed
+objects.
+
+Availability
+Currently employed. Next possible date of availability: July 2002.
+
+
+SUMMARY OF QUALIFICATIONS
+-------------------------
+
+* Programming in Java, C++, C, Eiffel, Ruby, Python, and Perl
+
+* Strong knowledge of Object-Oriented software engineering methodologies,
+  Object-Oriented Analysis and Design, Design By Contract, UML, Use-Case-driven
+  development, the Unified Software Development Process, the full Software
+  Development Life Cycle, and eXtreme Programming
+
+* Strong Web development skills with HTML4, CSS, XML, XSLT, Java Servlets,
+  Java Server Pages, CGI, PHP, and database-driven Web sites
+
+* Experience with Web and Application Servers including Apache, IIS, Tomcat,
+  JRun, WebSphere Application Server, Oracle Application Server, and Inprise
+  Application Server
+
+* Client/server development and distributed computing with CORBA, Java RMI, Java
+  Message Service (JMS), SOAP, Web Services, and some DCOM
+
+* Application development with Oracle 8i, Sybase, SQL-Server, PostgreSQL, and
+  MySQL databases
+
+* Basic Windows development with Visual C++, MFC, and COM
+
+* Experience with Windows 9x/NT/2000, Linux, and HP-UX development environments
+
+
+EXPERIENCE
+----------
+
+Consultant, Atos Origin, Inc.
+October 2000 - present
+
+* Serve as Java consultant and developer for numerous projects and clients
+
+* Design and implement solutions for in-house projects using Java and
+  Object-Oriented techniques
+
+* Instruct courses on Java programming
+
+Software Engineer, Carolla Development, Inc.
+March 1998 - October 2000
+
+* Project lead and primary developer for large-scale distributed application
+
+* Designed and instructed training courses on Java, C++, and Object-Oriented
+  Analysis and Design
+
+* Designed and developed software systems following a formal Object-Oriented
+  software engineering process
+
+* Collected and analyzed requirements. Designed solutions to requirements using
+  formal specification methods. Developed and tested solutions.
+
+* Documented all stages of the process including analysis, design, and
+  development according to UML and OOA/D techniques
+
+* Object-Oriented development with C++ and Java
+
+Technical Support Representative, NetExpress, Inc.
+February 1998 - October 2000
+
+* Assisted customers with technical questions regarding Internet services over
+  the telephone and through email
+
+* Performed troubleshooting for modem pools and Internet and mail servers
+
+* Created and administered accounts within an Access database application
+
+
+EDUCATION
+---------
+
+The Ohio State University, 1992 - present
+
+Bachelor of Science, Computer and Information Science
+
+
+PROJECTS AND TRAINING
+---------------------
+
+Oracle/Java Training Program - Coordinator
+for Atos Origin, Inc.
+ROLE: Training Program Coordinator, Teaching Assistant, Java/OO Consultant
+DESCRIPTION:
+Served as coordinator and teaching assistant for a comprehensive training
+program conducted by Procter & Gamble covering Java and Oracle application
+development. Topics covered by the courses were Java programming, Advanced Java,
+SQL, PL/SQL, Advanced SQL, Oracle Developer Report Builder, Systems Analysis and
+Design with Oracle Designer, SQL Performance Tuning, Java Procedural Features in
+Oracle 8i, and Oracle JDeveloper. Specific duties included:
+    * Assisting students with completion of course exercises
+    * Presenting organization-specific materials for topics not covered
+      in training courses
+    * Providing additional post-training mentoring to students
+    * Installation and configuration of development tools
+    * Writing and grading tests for evaluation of student progress
+    * Creation of comprehensive post-class exercises
+    * Evaluation of training program curriculum, including recommendations
+      for curriculum changes
+    * Created and instructed one day overview course of Java Server Pages
+      (JSP) technology
+
+
+Oracle/Java Training Program - Project Manager
+for Atos Origin, Inc.
+ROLE: Project Manager, Java/OO Consultant
+DESCRIPTION:
+Served as project manager and technical consultant for five projects completed
+by students of an Oracle/Java training program conducted by Procter & Gamble.
+Projects involved JSP and Servletfront-ends to Oracle databases. Specific duties
+included:
+    * Interviewing customers and team leads for requirements gathering
+    * Creation of functional specifications based on customer requirements for
+      each of five projects, including a proposed system architecture for use by
+      the students completing the project
+    * Assignment of students to project teams
+    * Providing mentoring to students regarding the use of java and Oracle
+      during design and development tasks
+    * Writing Java, JSP, and PL/SQL code for the implementation of some complex
+      routines
+    * Installation and configuration of development tools
+
+
+Java Training Course
+for Atos Origin, Inc.
+ROLE: Instructor
+DESCRIPTION:
+Instructed five-day training course on Object-Oriented programming in Java.
+Developed sample project to be implemented by students of the course.
+
+
+Data Warehouse Monitoring System
+for Atos Origin, Inc.
+ROLE: Architect/Developer
+TECHNOLOGIES: HTML, Java Servlets, Java Server Pages (JSP), XML, Java, Oracle,
+              Together/J, Tomcat, JavaScript, Visual SourceSafe
+DESCRIPTION:
+The system involved monitoring various aspects of a data warehouse system and
+reporting on their status. Specific duties included:
+    * Creation of system architecture in the form of a UML Analysis Model, based
+      on customer requirements
+    * Creation of UML Design Model and associated design documentation
+    * Low-level design, programming, and testing of the system
+    * Installation and configuration of the system and supporting environment at
+      client site
+    * Cration and administration of Visual SourceSafe source repository
+    * Use of TogetherSoft Together Control Center and Rational J to create
+      UML/technical documentation
+Developed for Broadwing, Inc.
+
+
+Online Order Processing System
+for Renaissance Worldwide, Inc.
+ROLE: Designer/Developer
+TECHNOLOGIES: Java, CORBA, Oracle 8i, JDBC, IBM AIX Toolkit for Java, JBuilder,
+              Inprise Application Server, Java Swing
+DESCRIPTION:
+Developed order monitoring system for processing online orders, order
+cancellations, and system errors as they were posted to an Oracle database.
+Specific duties included:
+    * Design and development of three monitoring systems for processing online
+      orders, order cancellations, and system errors as they were posted to an
+      Oracle database
+    * Programming client-side services in Java for interacting with CORBA
+      objects, AS/400 data queues via IBM's AS/400 Java toolkit, and Oracle
+      databases with JDBC
+    * Programming server-side CORBA objects with Inprise's Visibroker ORB using
+      the POA model
+    * Development of client-side user interface using Java Swing
+    * Identification and repair of performance bottlenecks between communicating
+      processes
+    * Documentation of the systems being developed
+Developed for The Longaberger Company
+
+
+Process Management/Workflow Application
+for Carolla Development
+ROLE: Project Lead and Developer
+TECHNOLOGIES: Java Servlets, CORBA, XML, JDBC
+DESCRIPTION:
+Architect and developer for a large-scale, distributed Project
+Management/Workflow application.  The application was a Web-based project
+management tool, which automated many of the tasks associated with the formal
+development process that it was designed to support.  Technologies involved
+included a suite of Java Servlets in the presentation tier using a CORBA
+interface to integrate with the business logic tier, XML documents and Document
+Type Definitions (DTDs) to serve as templates for documents created using the
+application, and the Poet Object-Oriented Database for persistent storage.
+Specific duties included:
+    * Interfacing with customer advocates for determining project scope and
+      gathering requirements
+    * Completing requirements specification, including full Use Case
+      descriptions and diagrams
+    * Completing the system architecture in the form of a UML Analysis Model
+      (Class and Collaboration diagrams)
+    * Completing the system design specification including the UML Design Model
+      (Class, Sequence, and Deployment diagrams)
+    * Low-level design and programming of the system using Java, CORBA,
+      Servlets, XML (DOM and SAX APIs, and DTDs), HTML CSS, and Poet
+    * Providing mentoring for additional developers in the use of CORBA and Java
+    * Evaluation of various CORBA ORBs and database products for use in the
+      application
+
+C++ Training Course
+for Carolla Development
+ROLE: Instructor and Assistant Designer
+DESCRIPTION:
+Instructed and assisted in the design of a five-day training course on
+Object-Oriented C++ programming. Developed sample project to be implemented by
+students of the course.
+
+
+Java Training Course
+for Carolla Development
+ROLE: Designer
+DESCRIPTION:
+Designed five-day training course on Object-Oriented programming in Java.
+Developed sample project to be implemented by students of the course.
+
+
+Object-Oriented Design Training Course
+for Carolla Development
+ROLE: Assistant Instructor
+DESCRIPTION:
+Assisted in instruction of five-day training course on Object-Oriented Design,
+including design of sample application using UML. Converted all course materials
+from using Booch notation to using UML notation.
+
+
+Commuter Assistance Application
+for The Ohio State University
+ROLE: Technical Lead and Developer
+TECHNOLOGIES: HTML, CGI/Perl, SQL, Sybase RDBMS on HP-UX
+DESCRIPTION:
+Technical Lead and Developer for an online Web based application to assist
+campus commuters. The system stored user preferences in a Sybase database, and
+allowed users to view personalizedinformation regarding construction, street
+closings, and other activities that could affect their normal commuting route.
+Implemented as a term project for Software Engineering course.
+
+
+
+REFERENCES
+----------
+
+Available upon request.
+
